@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seja bem-vindo ao meu portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <img
+        src="./assets/LOGO-FINAL.png" 
+        alt="Logo"
+        style="width: 200px;height: 150px; margin-top: 2rem;"
+      />
+      <!-- <div class="logo">Marcos Daniel Xavier</div> -->
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about" style="color: #665252">Sobre</a></li>
+          <li><a href="#experience" style="color: #665252">Experiência</a></li>
+          <li><a href="#biblio" style="color: #665252">Bibliografia</a></li>
+          <li><a href="#contact" style="color: #665252">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <img
+        src="./assets/LOGO-FINAL.png" 
+        alt="Logo"
+        style="width: 200px;height: 150px; margin-top: 2rem;"
+      />
+      <!-- <div class="logo">Marcos Daniel Xavier</div> -->
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()" style="color: #665252">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()" style="color: #665252">Experiência</a></li>
+          <li><a href="#biblio" onclick="toggleMenu()" style="color: #665252">Bibliografia</a></li>
+          <li><a href="#contact" onclick="toggleMenu()" style="color: #665252">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="whatsapp-button">
+      <a href="https://api.whatsapp.com/send?phone=5562993071468" target="_blank">
+          <img src="./assets/whatsapp-icon.png" alt="WhatsApp">
+      </a>
+      <span class="hover-message">Fale conosco pelo WhatsApp</span>
+    </div>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img 
+          src="./assets/about-pic.jpg" 
+          alt="Foto de Marcos Daniel"
+          style="border-radius: 30px;"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, eu sou</p>
+        <h1 class="title">Marcos Daniel Xavier</h1>
+        <p class="section__text__p2">Médico Neurocirurgião</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/lattes.pdf')"
+          >
+            Lattes
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contato
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Meu perfil no Linkedin"
+            class="icon"
+            onclick="window.open('https://br.linkedin.com/in/marcos-daniel-xavier-931528170', target='new')"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="Meu perfil no Instagram"
+            class="icon"
+            onclick="window.open('https://www.instagram.com/dr.marcosxavier/', target='new')"
+          />
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="about">
+      <p class="section__text__p1">Conheça mais</p>
+      <h1 class="title">Sobre Mim</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic-2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiência</h3>
+              <p>Neurocirurgião com 10+ anos <br /> de experiência como médico</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Educação</h3>
+              <p>Graduação em Medicina (Unipac/Fupac)<br />Especialização em Neurocirurgia (UNIFESP)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              O Dr. Marcos Daniel Xavier é dedicado à saúde de cada paciente, fazendo dela sua prioridade.
+              Com expertise em neurocirurgia, Dr. Xavier foca em intervenções especializadas, incluindo tratamento de condições na coluna, tumores cerebrais e aneurismas cerebrais. Sua abordagem compassiva e técnica avançada refletem o compromisso em proporcionar cuidados personalizados e eficazes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Conheça mais sobre minha</p>
+      <h1 class="title">Experiência</h1>
+      <div class="experience-details-container">
+        <div class="video-containers">
+          <div class="video-container">
+            <video id="video1" class="video" controls>
+              <source src="./assets/movies/IMG_2940.mp4" type="video/mp4"/>
+              <source src="./assets/movies/IMG_2943.MOV" type="video/quicktime"/>
+              Seu navegador não suporta essa exibição de vídeo
+            </video>
+          </div>
+          <div id="video2" class="video-container">
+            <video class="video" controls>
+              <source src="./assets/movies/IMG_2943.mp4" type="video/mp4"/>
+              <source src="./assets/movies/IMG_2943.MOV" type="video/quicktime"/>
+              Seu navegador não suporta essa exibição de vídeo
+            </video>
+          </div>
+          <div id="video2" class="video-container">
+            <video class="video" controls>
+              <source src="./assets/movies/IMG_2943.mp4" type="video/mp4"/>
+              <source src="./assets/movies/IMG_2943.MOV" type="video/quicktime"/>
+              Seu navegador não suporta essa exibição de vídeo
+            </video>
+          </div>
+          <div id="video2" class="video-container">
+            <video class="video" controls>
+              <source src="./assets/movies/IMG_2944.mp4" type="video/mp4"/>
+              <source src="./assets/movies/IMG_2944.MOV" type="video/quicktime"/>
+              Seu navegador não suporta essa exibição de vídeo
+            </video>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Estágio</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Neurologia e Neurocirurgia (2011)</h3>
+                  <p>Instituto do Crânio e da Coluna de Uberlândia, ICCU, Brasil</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Neurocirurgia pelo Grupo Neurocol (2016)</h3>
+                  <p>HOSPITAL EVANGÉLICO GOIANO, HEG, Brasil
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Suporte Avançado</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Advanced Cardiac Life Support - ACLS (2014)
+                  </h3>
+                  <p>HCor, HCOR, Brasil
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Avançado de Urgências e Emergências (2014)
+                  </h3>
+                  <p>Cremego, CRM - GO, Brasil</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Advanced Trauma Life Suport - ATLS (2016)
+                  </h3>
+                  <p>CEEN, CEEN, Brasil</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Extensão</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Extensão universitária em Visita Acadêmica ao Departamento de Neurocirurgia da USP (2013)</h3>
+                  <p>Universidade de São Paulo, USP, Brasil</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Extensão universitária em XII Curso de Emergências Clinicas USP (2013)</h3>
+                  <p>Universidade de São Paulo, USP, Brasil</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Extensão universitária em Dissecção das Fibras Brancas dos Sulcos e Giros (2019)</h3>
+                  <p>Universidade Federal de São Paulo, UNIFESP, Brasil</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Extensão universitária em Curso de Educação Continuada em Coluna SBC/SP (2022)</h3>
+                  <p>Sociedade Brasileira de Coluna, SBC, Brasil</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Outros</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Reanimação Neonatal (2013)</h3>
+                  <p>Sociedade Brasileira de Pediatria, SBP, Brasil</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Urgências e Emergências Clínicas e Traumáticas (2014)</h3>
+                  <p>Cremego, CRM - GO, Brasil</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#video2'"
+      />
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#video3'"
+      />
+    </section>
+    <section id="biblio">
+      <p class="section__text__p1">Minha produção</p>
+      <h1 class="title">Bibliográfica</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h3 class="experience-sub-title project-title">Lipoma intradural cervical:
+              relato de caso (2022)</h3>
+            <p>SANTOS, M. D. X. O.; CARDOSO, C. F. ; CARDOSO, A. F. ; MATTOS, A. C. ; PONTES, L. C. B.</p>
+          </div>
+          <div class="details-container color-container">
+            <h3 class="experience-sub-title project-title">Endoscopic Third Ventriculostomy For Treatment of Symptomatic Long-Standing Overt Ventriculomegaly In Adults: Case
+              Report (2022)</h3>
+              <p>VALE, B. L. ; SILVA, T. S. ; SANTOS, M. D. X. O. ; SURIANO, I. C. ; ZYMBERG, S. T. ; CAVALHEIRO, S. ; SANTOS, M. D. X. O.</p>
+          </div>
+          <div class="details-container color-container">
+            <h3 class="experience-sub-title project-title">Ética e Bioética: Injução Religiosa em Procedimento Médico (2012)</h3>
+            <p>JESUS, O. F. ; SANTOS, M. D. X. O.</p>
+          </div>
+          <div class="details-container color-container">
+            <h3 class="experience-sub-title project-title">Síndromes Coronarianas (2012)</h3>
+            <p>SANTOS, M. D. X. O.</p>
+          </div>
+          <div class="details-container color-container">
+            <h3 class="experience-sub-title project-title">Perfuração de Íleo Terminal por Corpo Estranho Simulando Quadro de Apendicite Aguda: Um Caso Raro (XXX Congresso Brasileiro de Cirurgia) (2013)</h7>
+            <p>SOARES ; SANTOS, M. D. X. O. ; SOARES, F. S. ; TOMAS, R. N. ; SILVA FILHO, W. P. ; CARMO FILHO, S. R.</p>
+          </div>
+          <div class="details-container color-container">
+            <h3 class="experience-sub-title project-title">Linfangioma Cístico de Mesentério: Achado raro em adulto jovem (XXX Congresso Brasileiro de Cirurgia) (2013)</h3>
+            <p>
+              SOARES ; SANTOS, M. D. X. O. ; SOARES, F. S. ; TOMAS, R. N. ; CARMO FILHO, S. R. ; SILVA FILHO, W. P.</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Entre em</p>
+      <h1 class="title">Contato Comigo</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:marcos.daniel@neurocol.com">marcos.daniel@neurocol.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://br.linkedin.com/in/marcos-daniel-xavier-931528170" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#biblio">Bibliografia</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Dr. Marcos Daniel Xavier. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
