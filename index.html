@@ -23,6 +23,7 @@
           <li><a href="#about" style="color: #665252">Sobre</a></li>
           <li><a href="#experience" style="color: #665252">Experiência</a></li>
           <li><a href="#biblio" style="color: #665252">Bibliografia</a></li>
+          <li><a href="#consultorios" style="color: #665252">Consultórios</a></li>
           <li><a href="#contact" style="color: #665252">Contato</a></li>
         </ul>
       </div>
@@ -44,6 +45,7 @@
           <li><a href="#about" onclick="toggleMenu()" style="color: #665252">Sobre</a></li>
           <li><a href="#experience" onclick="toggleMenu()" style="color: #665252">Experiência</a></li>
           <li><a href="#biblio" onclick="toggleMenu()" style="color: #665252">Bibliografia</a></li>
+          <li><a href="#consultorios" onclick="toggleMenu()" style="color: #665252">Consultórios</a></li>
           <li><a href="#contact" onclick="toggleMenu()" style="color: #665252">Contato</a></li>
         </div>
       </div>
@@ -93,8 +95,6 @@
         </div>
       </div>
     </section>
-
-
 
     <section id="about">
       <p class="section__text__p1">Conheça mais</p>
@@ -330,13 +330,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#video2'"
-      />
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#video3'"
+        onclick="location.href='./#biblio'"
       />
     </section>
     <section id="biblio">
@@ -377,69 +371,136 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href='./#consultorios'"
       />
     </section>
-    <section id="contact">
+    <section id="consultorios">
+      <p class="section__text__p1">Endereço dos</p>
+      <h1 class="title">Consultórios</h1>
       <div class="locations">
         <div class="location">
-          <div class="city">
+          <div class="location-item">
             <img
               class="icon"
               src="./assets/location.png"
               alt="Arrow icon"
               class="icon arrow"
             />
-            <h3>Anapolis-GO</h3>
+            <p>Anápolis - GO</p>
           </div>
           <br/>
-          <div class="hospital">
+          <div class="location-item">
             <img
               class="icon"
               src="./assets/hospital.png"
               alt="Arrow icon"
               class="icon arrow"
             />
-            <h3>Anapolis-GO</h3>
+            <p>Ânima Centro Hospitalar - Av. Brasil Norte, Qd.08, Lt. 01-10, 3790 - Cidade Universitária</p>
           </div>
           <br/>
-          <div class="hospital">
+          <div class="location-item">
             <img
               class="icon"
               src="./assets/hospital.png"
               alt="Arrow icon"
               class="icon arrow"
             />
-            <h3>Anapolis-GO</h3>
+            <p>Hospital Evangélico Goiano - Praça James Fanstone, 60 - Centro</p>
           </div>
           <br/>
-          <div class="hospital">
+          <div class="location-item">
             <img
               class="icon"
               src="./assets/hospital.png"
               alt="Arrow icon"
               class="icon arrow"
             />
-            <h3>Anapolis-GO</h3>
+            <p>CRA - Clínica Radiológica de Anápolis | Unidade Jundiaí</p>
           </div>
           <br/>
-          <div class="phone">
+          <div class="location-item">
             <img
               class="icon"
               src="./assets/phone-call.png"
               alt="Arrow icon"
               class="icon arrow"
             />
-            <h3>Anapolis-GO</h3>
+            <p>(62) 99307-1468</p>
           </div>
         </div>
         <div class="location">
-
+          <div class="location-item">
+            <img
+              class="icon"
+              src="./assets/location.png"
+              alt="Arrow icon"
+              class="icon arrow"
+            />
+            <p>Goiânia - GO</p>
+          </div>
+          <br/>
+          <div class="location-item">
+            <img
+              class="icon"
+              src="./assets/hospital.png"
+              alt="Arrow icon"
+              class="icon arrow"
+            />
+            <p>Centro Médico Valéria Frota - R.9-A, 160 - St. Aeroporto</p>
+          </div>
+          <br/>
+          <div class="location-item">
+            <img
+              class="icon"
+              src="./assets/phone-call.png"
+              alt="Arrow icon"
+              class="icon arrow"
+            />
+            <p>(62) 3221-8000</p>
+          </div>
         </div>
         <div class="location">
-
+          <div class="location-item">
+            <img
+              class="icon"
+              src="./assets/location.png"
+              alt="Arrow icon"
+              class="icon arrow"
+            />
+            <p>Ceres - GO</p>
+          </div>
+          <br/>
+          <div class="location-item">
+            <img
+              class="icon"
+              src="./assets/hospital.png"
+              alt="Arrow icon"
+              class="icon arrow"
+            />
+            <p>IMEC SAÚDE - R. Leopoldina Salgado, n.410 - Centro</p>
+          </div>
+          <br/>
+          <div class="location-item">
+            <img
+              class="icon"
+              src="./assets/phone-call.png"
+              alt="Arrow icon"
+              class="icon arrow"
+            />
+            <p>(62) 3307-1203</p>
+          </div>
         </div>
       </div>
+    </section>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+
+    <section id="contact">
       <p class="section__text__p1">Entre em</p>
       <h1 class="title">Contato Comigo</h1>
       <div class="contact-info-upper-container">
@@ -476,7 +537,6 @@
       <p>Este site é gerenciado e mantido pela <strong><a
         href="https://www.instagram.com/marketag__/?igshid=MzRlODBiNWFlZA%3D%3D"
         target="_blank">MARKETAG</a></strong>, especialistas em soluções digitais.</p>
->
     </footer>
     <script src="script.js"></script>
   </body>
