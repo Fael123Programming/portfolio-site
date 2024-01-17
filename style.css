@@ -9,6 +9,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+  line-height: 1.6;
 }
 
 html {
@@ -276,25 +278,25 @@ section {
   position: relative;
   text-align: center;
   margin-top: 30rem;
-  margin-bottom: 30rem;
+  margin-bottom: 20rem;
 }
 
 .about-containers {
-  gap: 2rem;
+  gap: .5rem;
   margin-bottom: 1rem;
   margin-top: 5rem;
 }
 
 .about-details-container {
   flex: 1;
-  justify-content: center;
+  justify-content: left;
   flex-direction: column;
 }
 
 .text-container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  text-align: justify;
+  /* padding-left: 1rem; */
+  /* padding-right: 1rem; */
+  text-align: left;
 }
 
 .about-containers,
@@ -313,7 +315,7 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 1rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -340,7 +342,7 @@ section {
   position: relative;
   text-align: center;
   margin-top: 10rem;
-  margin-bottom: 230rem;
+  margin-bottom: 75rem;
 }
 
 .experience-sub-title {
@@ -361,8 +363,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  gap: .5rem;
+  justify-content: flex-start;
 }
 
 article {
@@ -381,8 +383,7 @@ article .icon {
 #biblio {
   position: relative;
   text-align: center;
-  margin-top: 120rem;
-  margin-bottom: 110rem;
+  margin-bottom: 90rem;
 }
 
 .color-container {
@@ -397,6 +398,7 @@ article .icon {
 }
 
 .project-title {
+  font-size: 14pt;
   margin: 1rem;
   color: black;
 }
@@ -448,6 +450,26 @@ article .icon {
 }
 
 /* FOOTER SECTION */
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+}
+
+.locations {
+  /* inline-size: auto; */
+  margin: 5rem;
+  padding: 5rem;
+}
+
+.location {
+  display: inline-block;
+  /* flex-direction: column; */
+  align-items: center;
+  margin: 5rem;
+  padding: 5rem;
+}
 
 footer {
   height: 26vh;
